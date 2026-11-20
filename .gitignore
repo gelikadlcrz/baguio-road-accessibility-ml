@@ -1,0 +1,23 @@
+# Source datasets are excluded until provenance and reuse permissions are documented.
+/data/raw/*
+!/data/raw/.gitkeep
+
+# Derived data and machine-generated validation artifacts.
+/data/processed/*
+!/data/processed/.gitkeep
+/reports/validation/*.json
+/reports/validation/*.csv
+/reports/validation/figures/*
+!/reports/validation/figures/.gitkeep
+
+# Python and notebook environments.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+.env.*
+.DS_Store
+Thumbs.db
